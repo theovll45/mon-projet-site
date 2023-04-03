@@ -1,26 +1,61 @@
 /** BODY **/
 body {
-    background-color: black;
-    color: white;
+    color: black;
     font-size: 2rem;
 }
 
-
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
 
 /** HEADER **/
 header{
-background-color: grey;
-padding:1rem ;
+z-index: 10;
+padding:0rem ;
 display: flex;
-height: 7vh;
+height: 15vh;
 position: sticky;
 top: 0;
+color: white;
+border-radius: 30%;
+}
+
+@media (max-width: 70em){
+    header #pas_important { display: none;}
+}
+
+ header > #background-video {
+    height: 15vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 7%;
+    }
+
+    
+
+header img{
+    width: 2em;
+    padding-top: 1rem;
 }
 
 header nav{
     flex-basis: 100%;
     margin-left: 1em;
     width: 100%;
+    padding-top: 1rem;
 }
 
 ul{
@@ -48,6 +83,9 @@ li a{
     color: black;
 }
 
+#sous-menu > li>a{
+    color: white;
+}
 /** MENUE DEROULANT **/
 
 #menu-deroulant > a:after{
@@ -119,6 +157,13 @@ li a{
   
 
 /** MAIN**/
+#h{
+    background-color: white;
+    opacity: 60%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-radius: 5%;
+}
 
 
 /** CAROUSSEL**/
@@ -137,9 +182,9 @@ div#slider figure {
 div#slider figure img { width: 20%; height: auto; float: left; }
 
 div#slider {
-     width: 80%; 
-     max-width: 700px; 
-     overflow: hidden;
+    width: 80%; 
+    max-width: 1000px; 
+    overflow: hidden;
     margin: auto; }
 
 @keyframes slidy {
@@ -166,6 +211,7 @@ div#slider {
   }
 
   main{
+    z-index: 1;
     padding-bottom: 5%;
   }
 
@@ -177,5 +223,6 @@ footer{
     position: absolute;
     bottom: 1;
     width: 100%;
+    color: black;
 
 }
