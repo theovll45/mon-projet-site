@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ma Liste de Noël</title>
+
+  <!-- Fichiers CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa; /* Une nuance de blanc pour le fond */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #d9534f; /* Rouge plus doux */
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #ffffff; /* Texte blanc */
+    }
+
+    .jumbotron {
+      background-color: #5cb85c; /* Vert plus doux pour la section principale */
+      color: #ffffff; /* Texte blanc */
+    }
+
+    .btn-primary {
+      background-color: #d9534f; /* Rouge plus doux pour les boutons */
+      border-color: #d9534f;
+    }
+
+    .btn-primary:hover {
+      background-color: #c9302c; /* Rouge plus foncé au survol */
+      border-color: #ac2925;
+    }
+
+    .wishlist-item {
+      margin-bottom: 20px;
+    }
+
+    .wishlist-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Ma Liste de Noël</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mugs.html">Mugs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="montres.html">Montres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stage.html">Stages de pilotage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orchestres.html">Orchestres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="concerts.html">Concerts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="autres.html">Autres</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section principale -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Ma Liste de Noël</h1>
+    <p class="lead">Découvrez les cadeaux que je souhaite pour Noël !</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">En savoir plus</a>
+  </div>
+
+  <!-- Liste de Noël -->
+  <div class="container">
+    <div class="row wishlist-item">
+      <div class="col-md-4">
+        <img src="https://static6.festinagroup.com/product/festina/watches/detail/f20630_4.png" alt="Cadeau 1">
+      </div>
+      <div class="col-md-8">
+        <h2>Montre Festina </h2>
+        <p>elle est belle, dommage qu'elle ne soit pas verte</p>
+        <a href="https://festina.com/fr-FR/montre/homme/festina/montre-festina-f20630_4-noir-homme.html" class="btn btn-primary" target="_blank">Acheter</a>
+      </div>
+    </div>
+
+    <div class="row wishlist-item">
+      <div class="col-md-4">
+        <img src="//cluse.com/cdn/shop/files/CW20902_frontal.jpg?v=1696509253&width=1080" alt="Cadeau 2">
+      </div>
+      <div class="col-md-8">
+        <h2>Montre Cluse</h2>
+        <p> J'aime bien, la couleur verte est belle.</p>
+        <a href="https://cluse.com/collections/mens-watches/products/antheor-watch-steel-green-silver-colour-cw20902" class="btn btn-primary" target="_blank">Acheter</a>
+      </div>
+    </div>
+    <!-- Ajoutez d'autres éléments de la liste de Noël ici -->
+    <div class="row wishlist-item">
+        <div class="col-md-4">
+          <img src="https://www.tissotwatches.com/media/catalog/product/T/1/T137.410.11.091.00_R_1.png" alt="Cadeau 2">
+        </div>
+        <div class="col-md-8">
+          <h2>Montre Cluse</h2>
+          <p> J'aime bien, la couleur verte est belle.</p>
+          <a href="https://www.tissotwatches.com/fr-fr/t1374101109100.html?gad_source=1&gclid=Cj0KCQiAmNeqBhD4ARIsADsYfTd3p3YWPUt6QkbXv66ko8RpVGa7_m_Xl6_pLDd9sQtoSp6Bbr77ZvkaAqA7EALw_wcB&mckv=_dc&pcrid=&plid=&kword=" class="btn btn-primary" target="_blank">Acheter</a>
+        </div>
+      </div>
+  </div>
+
+  <!-- Fichiers JavaScript Bootstrap (jQuery inclus) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

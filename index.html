@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ma Liste de Noël</title>
+
+  <!-- Fichiers CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa; /* Une nuance de blanc pour le fond */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #d9534f; /* Rouge plus doux */
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #ffffff; /* Texte blanc */
+    }
+
+    .jumbotron {
+      background-color: #5cb85c; /* Vert plus doux pour la section principale */
+      color: #ffffff; /* Texte blanc */
+    }
+
+    .btn-primary {
+      background-color: #d9534f; /* Rouge plus doux pour les boutons */
+      border-color: #d9534f;
+    }
+
+    .btn-primary:hover {
+      background-color: #c9302c; /* Rouge plus foncé au survol */
+      border-color: #ac2925;
+    }
+
+    .wishlist-item {
+      margin-bottom: 20px;
+      text-align: center;
+      height: 300px; /* Hauteur fixe pour tous les éléments */
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .wishlist-item img {
+      max-width: 100%;
+      height: auto;
+      object-fit: cover; /* Ajuster la taille tout en préservant l'aspect ratio */
+      cursor: pointer;
+    }
+
+    /* Ajout de styles pour les conteneurs des cadeaux */
+    .gift-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .gift-item {
+      width: calc(50% - 10px); /* Largeur de 50% avec marge de 10px entre les éléments */
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 768px) {
+      /* Pour les écrans plus petits, aligner par 1 */
+      .gift-item {
+        width: calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Ma Liste de Noël</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Accueil</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section principale -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Ma Liste de Noël</h1>
+    <p class="lead">Découvrez les cadeaux que je souhaite pour Noël !</p>
+    <a class="btn btn-primary btn-lg" href="non.html" role="button">En savoir plus</a>
+  </div>
+
+  <!-- Liste de Noël -->
+  <div class="container gift-container">
+    <!-- Ajoutez des images cliquables redirigeant vers d'autres pages -->
+    <div class="wishlist-item gift-item">
+      <a href="lien_vers_page_montres.html">
+        <img src="montres.webp" alt="Montres">
+      </a>
+    </div>
+
+    <div class="wishlist-item gift-item">
+      <a href="mugs.html">
+        <img src="mugs2.jpg" alt="Mugs">
+      </a>
+    </div>
+
+    <div class="wishlist-item gift-item">
+      <a href="stage.html">
+        <img src="voitures.jpg" alt="Stages de pilotage">
+      </a>
+    </div>
+
+    <div class="wishlist-item gift-item">
+      <a href="orchestres.html">
+        <img src="orchestres.jpg" alt="Autres1">
+      </a>
+    </div>
+
+    <div class="wishlist-item gift-item">
+      <a href="concerts.html">
+        <img src="concerts.webp" alt="Autres2">
+      </a>
+    </div>
+
+    <div class="wishlist-item gift-item">
+      <a href="autres.html">
+        <img src="autres.jpg" alt="Autres4">
+      </a>
+    </div>
+
+    <!-- Ajoutez d'autres espaces pour les images cliquables ici -->
+  </div>
+
+  <!-- Fichiers JavaScript Bootstrap (jQuery inclus) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>

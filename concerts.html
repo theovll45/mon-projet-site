@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Ma Liste de Noël</title>
+
+  <!-- Fichiers CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <style>
+    body {
+      background-color: #f8f9fa; /* Une nuance de blanc pour le fond */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar {
+      background-color: #d9534f; /* Rouge plus doux */
+    }
+
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #ffffff; /* Texte blanc */
+    }
+
+    .jumbotron {
+      background-color: #5cb85c; /* Vert plus doux pour la section principale */
+      color: #ffffff; /* Texte blanc */
+    }
+
+    .btn-primary {
+      background-color: #d9534f; /* Rouge plus doux pour les boutons */
+      border-color: #d9534f;
+    }
+
+    .btn-primary:hover {
+      background-color: #c9302c; /* Rouge plus foncé au survol */
+      border-color: #ac2925;
+    }
+
+    .wishlist-item {
+      margin-bottom: 20px;
+    }
+
+    .wishlist-item img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barre de navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Ma Liste de Noël</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mugs.html">Mugs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="montres.html">Montres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="stage.html">Stages de pilotage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="orchestres.html">Orchestres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="concerts.html">Concerts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="autres.html">Autres</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Section principale -->
+  <div class="jumbotron text-center">
+    <h1 class="display-4">Ma Liste de Noël</h1>
+    <p class="lead">Découvrez les cadeaux que je souhaite pour Noël !</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">En savoir plus</a>
+  </div>
+
+  <!-- Liste de Noël -->
+  <div class="container">
+    <div class="row wishlist-item">
+      <div class="col-md-4">
+        <img src="https://statics.digitick.com/commun/images/upload/events/b1/e1/yuzmv2024_300.jpg" alt="Cadeau 1">
+      </div>
+      <div class="col-md-8">
+        <h2>Yuzmv </h2>
+        <p>Je suis un grand fan de ses musiques, c'est du génie.</p>
+        <a href="https://www.seetickets.com/fr/ap/event/yuzmv/le-trianon/35745" class="btn btn-primary" target="_blank">Acheter</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fichiers JavaScript Bootstrap (jQuery inclus) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+</html>
